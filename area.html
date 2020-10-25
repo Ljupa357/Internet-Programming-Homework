@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+ <body>
+     
+    <input type="text" id="b1" placeholder="Enter first number">
+    <input type="text" id="b2" placeholder="Enter second number">
+    <input type="text" id="b3" placeholder="Enter third number">
+    <input type="button" value="Calculate" id="btnCalc">
+     
+    <div id="result" style="width:150px; border: 1px solid #ddd;position: absolute;top:50px;left:50;padding:20px">
+     
+    </div>
+     
+    <script>
+     
+    function area(){
+        var number1=document.getElementById("b1").value;
+        var number2=document.getElementById("b2").value;
+        var number3=document.getElementById("b3").value;
+        var result=document.getElementById("result");
+     
+        number1=Number(number1);
+        number2=Number(number2);
+        number3=Number(number3);
+     
+        let area=number1*number2*number3/3;
+        result.innerHTML="Area of triangle:"+area
+    }
+     
+     
+    var btnCalc=document.getElementById("btnCalc");
+    btnCalc.onclick=area;
+    </script>
+        
+    </body>
+</head>
+
+</html>
